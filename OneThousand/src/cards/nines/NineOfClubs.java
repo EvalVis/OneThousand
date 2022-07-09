@@ -1,0 +1,12 @@
+package cards.nines;
+
+import cards.Card;
+import cards.Type;
+
+public class NineOfClubs extends Card{
+	
+	public NineOfClubs(int x, int y) {
+		super(x, y, "nineOfClubs.png", Type.Clubs);
+	}
+
+}
