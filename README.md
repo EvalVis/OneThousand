@@ -28,6 +28,7 @@ When 3 cards are played, the winner is determined by these rules:
 * If there is one trump card it wins, if there are two or three, card values determine the winner.
 * If there are two or three cards of first's cards type, the highest value card from this type wins.
 * Otherwise, the player who played the card first (who won the last 3 card battle), wins.
+<!-- -->
 The player who wins the 3 card battle gets to play first on the upcoming 3 card battle. Also the winner takes his and the losers cards which were played - they will add up to his score. The first player can set trump type or replace the old one if he has marriage suited pairs. If a king or queen was played earlier without playing first, marriage does not happen and points are not awarded as well as the trump is lost.
 When all 21 (7 \* 3) cards are played the score is calculated. All taken cards are summed by their values and marriage values are also applied. If the player failed to fulfill his bet, he loses points: if he bet 100 he will lose 100 (unless the player bet playing blindly then it's 200).
 The game goes up to 1000 points.
