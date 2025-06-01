@@ -17,25 +17,31 @@ public class ServerMain implements Runnable{
 	public static final int userCount = 3;
 	
 	public static void main(String[] args) {
-		new ServerMain();
+		if (args.length != 1) {
+			System.out.println("Please provide server port.");
+			System.exit(1);
+		}
+		try {
+			int port = Integer.parseInt(args[0]);
+			new ServerMain(port);
+		} catch (NumberFormatException e) {
+			System.out.println("Error: Port must be a number");
+			System.exit(1);
+		}
 	}
 	
-	private ServerMain() {
+	private ServerMain(int port) {
 		listen = new Thread(this, "Run");
-		init();
+		init(port);
 		listen.start();
 	}
 	
-	private void init() {
-		System.out.println("Please enter port:");
-		Scanner in = new Scanner(System.in); 
-		int port = in.nextInt();
-		in.close();
+	private void init(int port) {
 		try {
 			server = new ServerSocket(port, 6);
-			System.out.println("Server started.");
+			System.out.println("Server started on port " + port);
 		} catch (Exception e) {
-			System.out.println("Failed to initialize ev.projects.onethousandserver.server.");
+			System.out.println("Failed to initialize server on port " + port);
 			System.exit(0);
 		}
 	}
