@@ -55,6 +55,7 @@ public class ServerMain implements Runnable{
 		if(game.disconnection) continue;
 		Thread play = new Thread() {
 			public void run() {
+				System.out.println("All players connected. Starting game...");
 				Communicator.sendToAll("/s", game);
 				game.play();
 			}
@@ -71,7 +72,7 @@ public class ServerMain implements Runnable{
 			Socket socket = server.accept();
 			game.online[i] = socket;
 			game.names[i] = Communicator.receive(socket, game);
-			System.out.println("A new client named " + game.names[i] + ".");
+			System.out.println("A new client named " + game.names[i] + ". Waiting for " + (userCount - i - 1) + " more players.");
 		} catch(Exception e) {
 			System.out.println("Failed while listening for connections.");
 		}

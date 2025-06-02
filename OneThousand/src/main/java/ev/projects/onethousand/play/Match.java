@@ -85,7 +85,7 @@ public class Match {
 		}
 		else if(message.startsWith("/c")) {
 			if(black) {
-			screen.setInfoMessage("Current call is " + message.substring(2) + ". Do you want to reveal your ev.projects.onethousand.cards? Press Y for yes, N for no.");
+			screen.setInfoMessage("Current call is " + message.substring(2) + ". Do you want to reveal your cards? Press Y for yes, N for no.");
 			waitForRevealOrNot();
 			}
 			screen.setInfoMessage("Current call is " + message.substring(2) + ". Will you raise it by 10 or pass? Press R for raise, P for pass.");
