@@ -2,6 +2,20 @@
 
 This repo consists of One thousand game server and One thousand game client.
 
+## Gameplay images
+
+### Starting the game
+
+![Starting the game](images/starting_game.png)
+
+### In the middle of the game
+
+![In the middle of the game](images/midplay.png)
+
+### Start of the new round
+
+![Start of the new round](images/new_round_start.png)
+
 ## Note
 This game is a variant of One Thousand game. Thus it could slightly vary from the traditional One Thousand game. Also the game could lack some of it's features. However, the main gameplay is working.
 
@@ -32,7 +46,9 @@ When the forth player joins a new game room will be created. Each room hosts 3 p
     1. Your nickname.
     2. Server IP address. If you host the server on the same computer enter `localhost`.
     3. Server port.
-    4. Your gmail address. Optional, if provided this gmail will be used to send you game images.
+    4. Your gmail address.
+    Optional, if provided this gmail will be used to send you game images.
+    The game automatically captures images as you play.
     5. Your gmail app password. Optional, but required if gmail address entered,
     you will need to generate it if you don't have it. This app password will
     only be sent to gmail SMTP server in order to send you an email.
@@ -70,3 +86,11 @@ When 3 cards are played, the winner is determined by these rules:
 The player who wins the 3 card battle gets to play first on the upcoming 3 card battle. Also the winner takes his and the losers cards which were played - they will add up to his score. The first player can set trump type or replace the old one if he has marriage suited pairs. If a king or queen was played earlier without playing first, marriage does not happen and points are not awarded as well as the trump is lost.
 When all 21 (7 \* 3) cards are played the score is calculated. All taken cards are summed by their values and marriage values are also applied. If the player failed to fulfill his bet, he loses points: if he bet 100 he will lose 100 (unless the player bet playing blindly then it's 200).
 The game goes up to 1000 points.
+
+# Gameplay notes
+
+1. If you will the call 3 additional cards will be revealed.
+The card count in your hand must match the card count of other players so you must discard 3 cards.
+You can do it by left clicking on them, a red cross will appear on the card.
+To cancel selection, press again. When you have 3 cards selected press `Enter` to confirm your choice.
+2. After you discard the cards you can increase your betting amount if you wish, yet you cannot decrease it.
