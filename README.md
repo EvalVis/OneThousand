@@ -29,7 +29,7 @@ Checkout [https://github.com/EvalVis/OneThousand/releases/tag/1.0.0](releases) f
 
 1. Make sure you have Java 17 or later installed in your computer.
 2. Download the server jar.
-3. Execute command: `java -jar <name of the server jar file>.jar <port>". When the client connects to the server the same port value must be used.
+3. Execute command: `java -jar <name of the server jar file>.jar <port>`. When the client connects to the server the same port value must be used.
 4. If port is not taken the server should start. If port is taken, select another port.
 
 After 3 players join the game will start.
@@ -41,7 +41,7 @@ When the forth player joins a new game room will be created. Each room hosts 3 p
 
 1. Make sure you have Java 17 or later installed in your computer.
 2. Download the client jar.
-3. Execute command: `java -jar <name of the client jar file>.jar".
+3. Execute command: `java -jar <name of the client jar file>.jar`.
 4. In the pop up window enter:
     1. Your nickname.
     2. Server IP address. If you host the server on the same computer enter `localhost`.
